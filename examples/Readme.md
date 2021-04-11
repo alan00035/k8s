@@ -13,3 +13,7 @@ access modes:
 not all volumes support all modes
 a PV can only have one active PVC/AccessMode
 
+---
+Storage Class
+
+Dynamically create new PV -> pv SUBSYSTEM CONTROL LOOP -> new pvc
