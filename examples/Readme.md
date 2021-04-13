@@ -32,3 +32,5 @@ pod needs pvc to use pv - manual process
 making things dynamic will use sc
 
 k8s doesnt manage user, integrate with AD/IAM/...
+
+Client -> api -> AuthN-> AuthZ -> Admission Control -> Object Validation 
