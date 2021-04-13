@@ -30,3 +30,5 @@ $kubectl get pvc
 **decouple the volume from pod
 pod needs pvc to use pv - manual process
 making things dynamic will use sc
+
+k8s doesnt manage user, integrate with AD/IAM/...
