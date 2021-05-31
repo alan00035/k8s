@@ -15,6 +15,22 @@ tf stores a cache of the attribute values of all resources in the state.
 in the default configuration, tf stores the states in a file in the current working directory where tf was run.
 remote state is recommand for multiple users in the same tf, to allow everyone to be working with the same states. 
 
+TF syntax:
+"hashicorp configuration language"
+- human readable
+- suport configurate syntax and expressions
+- conditionals, functions, templates
+
+terraform will map the configuration with actual resources, if there is no update on either way, redeployment will make NO change as the define configuration matched with the physical status
+
+
+Value type:
+String; Numbers; bool;
+map; {name = "xx", age = "xx"} //map can mix with variable
+list; e.g ["bean","beef"] 
+set; 
+tuple; 
+
 
 Steps:
 $terraform init -get-plugins=false
