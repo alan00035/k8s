@@ -37,7 +37,8 @@ $terraform init -get-plugins=false
 $terraform validate 
 $terraform  plan  -> check the current states before determine the changes
 it will generates an execution plan, it shows what tf will do when you apply.
-
+terraform init
+validate
 
 $terraform apply -auto-approve -> refresh the states
 e.g. replace a new ami ; instead of update, it will destroy the existing instance and create a new one 
@@ -84,13 +85,11 @@ Definite the policey -> manage it-> enforce policy checks on runs -> mocking sen
 terraform fmt -diff       //see the difference
 terraform fmt -recursive  //see the subdirectory
 terraform fmt -list=false
-
 terraform.tfstate
 
 terraform taint resource.id
 terraform taint address
 terraform taint -state-=path
-
 terraform import [option] addres id
 
 workspace
