@@ -21,13 +21,11 @@ resource "aws_instance" "app_server" {
   }
 }
 
-//add a remote backend
-terraform {
-  backend "remote" {
-    organisation = "<name>"
-    workspaces {
-      name = " xxxx"
-    }
+resource "aws_instance" "example{
+  count = "${terraform.workspace == "default" ? 5 :1 }"
+
+  tags ={
+    Name = "web - ${terraform.workspace}"
   }
 }
 
